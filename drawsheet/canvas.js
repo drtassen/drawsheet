@@ -20,7 +20,7 @@ let paths = [];
 // Are we painting?
 let painting = false;
 // How long until the next circle
-let next = 0;
+let next = 1.1;
 // Where are we now and where were we?
 let current;
 let previous;
