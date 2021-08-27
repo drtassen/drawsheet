@@ -20,13 +20,13 @@ let paths = [];
 // Are we painting?
 let painting = false;
 // How long until the next circle
-let next = 1.1;
+let next = 0;
 // Where are we now and where were we?
 let current;
 let previous;
 
 function setup() {
-    createCanvas(720, 400);
+    createCanvas(1920, 1080);
     current = createVector(0, 0);
     previous = createVector(0, 0);
 };
