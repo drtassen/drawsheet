@@ -32,7 +32,7 @@ function setup() {
 };
 
 function draw() {
-    background(200);
+    background(250);
 
     // If it's time for a new point
     if (millis() > next && painting) {
@@ -43,7 +43,7 @@ function draw() {
 
         // New particle's force is based on mouse movement
         let force = p5.Vector.sub(current, previous);
-        force.mult(0.05);
+        force.mult(0.005);
 
         // Add new particle
         paths[paths.length - 1].add(current, force);
@@ -112,13 +112,13 @@ class Path {
     }
 }
 
-// Particles along the path
+// Particles along the path ^^ levetid (trenger resett tillknytning) (drag skall bort)
 class Particle {
     constructor(position, force, hue) {
         this.position = createVector(position.x, position.y);
         this.velocity = createVector(force.x, force.y);
-        this.drag = 0.95;
-        this.lifespan = 255;
+        this.drag = 1.00;
+        this.lifespan = 3000;
     }
 
     update() {
