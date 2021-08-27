@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="p5Lab1.js"></script>
+    <script src="p5lab2.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
     <title>Document</title>
     <title>¯\_(ツ)_/¯</title>
     <!-- <style>
@@ -17,18 +21,15 @@
 </head>
 
 <body>
+    <script src="canvas.js"></script>
+
+    <div>
+        var c = document.getElementById("myCanvas"); var ctx = c.getContext("2d"); ctx.beginPath(); ctx.moveTo(20, 20); ctx.lineTo(30, 100); ctx.lineTo(300, 100); ctx.strokeStyle = "blue"; ctx.stroke();
+    </div>
 
     <canvas id="myCanvas" width="500" height="300" style="border:8px solid #80d176;">
 </canvas>
     <script>
-        var c = document.getElementById("myCanvas");
-        var ctx = c.getContext("2d");
-        ctx.beginPath();
-        ctx.moveTo(20, 20);
-        ctx.lineTo(30, 100);
-        ctx.lineTo(70, 100);
-        ctx.strokeStyle = "blue";
-        ctx.stroke();
     </script>
 </body>
 
