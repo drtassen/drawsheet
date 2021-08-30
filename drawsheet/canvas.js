@@ -43,7 +43,7 @@ function draw() {
 
         // New particle's force is based on mouse movement
         let force = p5.Vector.sub(current, previous);
-        force.mult(0.005);
+        force.mult(0.05);
 
         // Add new particle
         paths[paths.length - 1].add(current, force);

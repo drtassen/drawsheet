@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        src = "test.js"
+    </script>
+    <title>Document</title>
+    <style>
+        canvas {
+            border: 5px solid rgb(57, 211, 37);
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="fargerød" type="buttonrød">RØD</button>
+
+
+
+
+    <!-- <canvas onmousemove="draw(event)" style="margin:0;padding:0;" id="imgCanvas" class="canvasView" width="250" height="250"></canvas> -->
+    <canvas onmousedown="draw(event)" style="margin:0; padding:0;" id="imgCanvas" class="canvasView" width="550" height="550"></canvas>
+
+    <script>
+        function draw(e) {
+            var canvas = document.getElementById("imgCanvas");
+            var context = canvas.getContext("2d");
+            Musx = e.clientX;
+            Musy = e.clientY;
+            context.fillStyle = "(#000000)";
+            context.fillRect(Musx, Musy, 5, 5);
+        }
+        //${farge}
+        // function buttonrød
+        // getElementById('fillstyle')
+    </script>
+</body>
+
+</html>
